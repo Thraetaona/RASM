@@ -39,9 +39,9 @@ RASM ("رسم") is an abbreviation for '*Rasterizing Assembler*' and also means 
 * **Math**
   * Fast SIMD accelerated operations
   *
+* **Audio**
+* **Input**
 * **Core Components**
   * Asynchronous logging to HTML5's Console
   *
-* **Audio**
-* **Input**
 * **Scripting Interface**
