@@ -13,8 +13,8 @@
   </p>
 
   <h3>
-	<a href="https://VioletVillain.github.io/RASM/">Website</a>
-	  <span> | </span>
+    <a href="https://VioletVillain.github.io/RASM/">Website</a>
+    <span> | </span>
     <a href="https://github.com/VioletVillain/RASM/wiki">Wiki</a>
     <span> | </span>
     <a href="https://github.com/VioletVillain/RASM/issues">Forums</a>
@@ -27,6 +27,18 @@
   </h3>
 </div>
 
-##  Introduction
+## Introduction
 
-RASM ("رسم") is an abbreviation for '*Rasterizing Assembler*' and also means 'Drawing' in Persian.
+RASM ("رسم") is an abbreviation for '*Rasterizing Assembler*' and also means '*Drawing*' in Persian.
+
+## Features
+-more info in the contributing.md file will be released soon- 
+* **Graphics**
+  * WebGPU based renderer
+  *
+* **Core Components**
+  * Asynchronous logging to HTML5's Console
+  *
+* **Audio**
+* **Input**
+* **Scripting Interface**
