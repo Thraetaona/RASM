@@ -32,13 +32,11 @@
 
 RASM ("رسم") is an abbreviation for '*Rasterizing Assembler*' and also means '*Drawing*' in Persian.
 
----
-
-RASM is a modular and minimalist web based game engine written in Rust, it 
+It is a modular and minimalistic web based game engine written in Rust, the project aims to be as fast as possible while maintaining its safety and portability within the web.
 
 ---
 
-'RASM' Is written in Rust and compiles to native .wasm (WebAssembly) files that run and execute inside a modern browser, it is based upon WebGPU and has a javascript modding interface available.
+'RASM' is written in Rust and compiles to native .wasm (WebAssembly) files that run and execute inside a modern browser, it is based upon WebGPU and has a javascript modding interface available.
 
 The project uses Github as its infrastructure and basis.  the [Wiki](https://github.com/VioletVillain/RASM/wiki), [Source Code](https://github.com/VioletVillain/RASM), [Forums/Issue tracker](https://github.com/VioletVillain/RASM/issues), [CI](https://github.com/VioletVillain/RASM/actions), [Releases](https://github.com/VioletVillain/RASM/releases), [Roadmap](https://github.com/VioletVillain/RASM/projects) And the [Website](https://VioletVillain.github.io/RASM/) Are All Hosted on Github.
 
