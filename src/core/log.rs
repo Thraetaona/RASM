@@ -1,62 +1,38 @@
-use web_sys::console;
+//!
+//!
 
-/// An enum representing the available verbosity levels of the logger.
-///
-/// These variants correspond to HTML5 'Console' methods.
-///
-/// All messages with a LogLevel smaller than the
-/// console LogLevel will be printed to the console.
-pub enum LogLevel {
-    /// The "error" level.
-    ///
-    /// Designates critical errors.
-    Error = 0,
-    /// The "warn" level.
-    ///
-    /// Designates hazardous situations.
-    Warn,
-    /// The "info" level.
-    ///
-    /// Designates informational conditions.
-    Info,
-    /// The "debug" level.
-    ///
-    /// Designates lower priority information.
-    Debug,
-    /// The "trace" level.
-    ///
-    /// Designates very low priority, often extremely verbose, information.
-    Trace,
-}
-
-// TODO: Choose a less confusing name for this backend.
-pub async fn print(console_level: LogLevel, message: &str) {
-    match console_level {
-        LogLevel::Error => console::error_1(&format!("[ERROR] {}", message).into()),
-        LogLevel::Warn => console::warn_1(&format!("[WARN] {}", message).into()),
-        LogLevel::Info => console::info_1(&format!("[INFO] {}", message).into()),
-        LogLevel::Debug => console::log_1(&format!("[DEBUG] {}", message).into()),
-        LogLevel::Trace => console::trace_1(&format!("[TRACE] {}", message).into()),
-    }
-}
+use web_sys::console::*;
 
 /// A logging Macro that takes a variable number of arguments.
 ///
 /// This macro will generically log with the specified `LogLevel`.
+/// It is similar to rust's [println](https://doc.rust-lang.org/std/macro.println.html) macro.
 ///
 /// # Examples
 ///
-/// ```edition2018
-/// use rasm::core::log::{log, LogLevel};
+/// ```
+/// use rasm::core::log::*;
 ///
 /// # fn main() {
 /// 
-/// # TODO: add a practical example.
+/// rasm::console!(info, "1 + 3 = {}. It Works!", 4);
 ///
-/// log!(LogLevel::Error, "Shader initialization failed, Err Code: {}-{}", x, y);
+/// // TODO: add a practical example.
+///
+/// rasm::console!(error, "Shader initialization failed, Err Code: {}-{}", 123, 456);
+///
+/// rasm::console!(log, "Condition", 404 ,"met, exiting now.");
 /// # }
 /// ```
 #[macro_export]
-macro_rules! log {
-    ($console_level:expr, $($args:tt)*) => (print($console_level, &format_args!($($args)*).to_string()))
+macro_rules! console {
+    ($console_level: ident, $($args: tt)*) => ({
+        async {
+            // Macros do not support arbitrary placement of concatenated identifiers due to the way they expand, hence the use of constants.
+            let method = concat_idents!($console_level, _1); // TODO: Make this an immutable variable with 'expression' type.
+            // ${console_level}_1 (e.g log_1) will be used as web-sys's suffixed methods will accept 'JsValue',
+            // while unprefixed ones expect 'Array'; 'str' can only be converted to 'JsValue'.
+            method(&concat!($($args)*).into()); // TODO: check if this line can be written in a shorter and more efficient way.
+        }
+    })
 }
