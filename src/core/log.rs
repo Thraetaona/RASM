@@ -30,7 +30,7 @@ macro_rules! console {
         async {
             // Macros do not support arbitrary placement of concatenated identifiers due to the way they expand, hence the use of constants.
             let method = concat_idents!($console_level, _1); // TODO: Make this an immutable variable with 'expression' type.
-            // ${console_level}_1 (e.g log_1) will be used as web-sys's suffixed methods will accept 'JsValue',
+            // ${console_level}_1 (e.g log_1) will be used as web-sys's suffixed methods accept 'JsValue',
             // while unprefixed ones expect 'Array'; 'str' can only be converted to 'JsValue'.
             method(&concat!($($args)*).into()); // TODO: check if this line can be written in a shorter and more efficient way.
         }
