@@ -32,7 +32,7 @@
 
 RASM ("رسم") is an abbreviation for '*Rasterizing Assembler*' and also means '*Drawing*' in Persian.
 
-It is a modular and minimalistic web based game engine written in Rust, the engine aims to be as fast as possible while maintaining its safety and portability within the web.
+It is a modular and minimalistic web based game engine written in Rust, the engine aims to be as fast as possible while maintaining its safety and portability within the web platform.
 
 ---
 
