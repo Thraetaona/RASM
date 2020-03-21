@@ -1,8 +1,12 @@
 // Crate-level documentation (Overview) resides in the 'README.md' file.
 
-// #![no_std] // Async will soon be available on non-std programs. https://github.com/rust-lang/rust/pull/69033
 
+#![no_std]
+
+// This allows other crates to use RASM macros that depend on unstable features; without having to enable any nightly features.
+#![feature(allow_internal_unstable)]
 #![feature(concat_idents)]
+
 
 pub mod core;
 
