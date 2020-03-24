@@ -41,7 +41,7 @@ It is a modular and minimalistic web based game engine written in Rust, the engi
 The project uses Github as its infrastructure and basis.  the [Wiki](https://github.com/VioletVillain/RASM/wiki), [Source Code](https://github.com/VioletVillain/RASM), [Forums/Issue tracker](https://github.com/VioletVillain/RASM/issues), [CI](https://github.com/VioletVillain/RASM/actions), [Releases](https://github.com/VioletVillain/RASM/releases), [Roadmap](https://github.com/VioletVillain/RASM/projects) And the [Website](https://VioletVillain.github.io/RASM/) Are All Hosted on Github.
 
 ## Features
--more info in the contributing.md file will be released soon- 
+[-Check here for project's progress-](https://github.com/VioletVillain/RASM/projects/1)
 * **Graphics**
   * WebGPU based renderer
   *
