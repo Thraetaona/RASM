@@ -11,19 +11,20 @@ documentation = "https://github.com/VioletVillain/RASM/wiki"
 edition = "2018"
 publish = true
 keywords = ["rasm", "graphics", "3D", "game", "engine"]
-categories = ["multimedia", "wasm", "concurrency", "graphics", "game-engines"]
+categories = ["no-std", "wasm", "concurrency", "graphics", "game-engines"]
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+name = "rasm"
+path = "src/lib.rs"
 
 [dependencies]
-web-sys = { version = "0.3.35", features = [
+web-sys = { version = "0.3.37", features = [
   "console",
   #"WebGpu",
   #"WebGpuDevice",
 ]}
   
-
 [profile.release]
 lto = "fat"
 codegen-units = 1
