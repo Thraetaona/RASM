@@ -34,7 +34,7 @@
 ### Name & Logo
 RASM ("رسم") is an abbreviation for '*Ray-tracing Assembler*' or '*Rasterizing Assembler*' depending on the context and also means '*Drawing*' in Persian. \
 It explicates '*Tradition*', '*Practical*' or '*Mainstream*' as well. \
-Interestingly, in addition to being a short and easy to remember name with relatable translations, it also starts with the first alphabet of the name of the programming language its written in, **R**ust.
+Interestingly, in addition to being a short and easy to remember name with relatable translations, it also starts with the first alphabet of the name of the programming language its written in; '**R**ust'.
 
 RASM's logo (once ready) is supposed to be an orange/yellow lightning bolt resembling a pencil (pencils are usually colored yellow/orange too), which is writing 'RASM' on a paper/surface/board. \
 The lightning bolt shape implies RASM's speed and performance, while the pencil (with its eraser) form states its purpose as a monolithic game/rendering engine.
