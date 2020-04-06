@@ -10,15 +10,27 @@ repository = "https://github.com/VioletVillain/RASM"
 documentation = "https://github.com/VioletVillain/RASM/wiki"
 edition = "2018"
 publish = true
-keywords = ["rasm", "graphics", "3D", "game", "engine"]
-categories = ["no-std", "wasm", "concurrency", "graphics", "game-engines"]
+keywords = ["raytracing", "graphics", "3D", "game", "engine"]
+categories = ["rendering::engine", "wasm", "concurrency", "graphics", "game-engines"]
+
+[badges]
+maintenance = { status = "actively-developed" }
 
 [lib]
-crate-type = ["cdylib", "rlib"]
 name = "rasm"
 path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+harness = false
+test = true
+doctest = true
+doc = true
 
 [dependencies]
+rayon =  "1.3.0"
+legion = { version = "0.2.1", default-features = false, features = [
+  "par-iter",
+  "par-schedule",
+]}
 web-sys = { version = "0.3.37", features = [
   "console",
   #"WebGpu",
