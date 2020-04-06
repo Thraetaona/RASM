@@ -2,14 +2,14 @@
 
   <h1><code>RASM</code></h1>
 
-<img src="" alt="Logo">
+  <img src="" alt="Logo">
 
   <p>
     <strong>3D Ray-Tracing WebGPU Game Engine Written in Rust WebAssembly.</strong>
   </p>
 
   <p>
-    <a href="https://github.com/VioletVillain/RASM/actions"><img alt="GitHub Actions status" src="https://github.com/VioletVillain/RASM/workflows/RASM/badge.svg"></a>
+    <a href="https://github.com/VioletVillain/RASM/actions"><img alt="GitHub Actions CI status" src="https://github.com/VioletVillain/RASM/workflows/RASM/badge.svg"></a>
   </p>
 
   <h3>
@@ -28,8 +28,9 @@
   
 </div>
 
-## Introduction
+***
 
+## Introduction
 ### Name & Logo
 RASM ("رسم") is an abbreviation for '*Ray-tracing Assembler*' or '*Rasterizing Assembler*' depending on the context and also means '*Drawing*' in Persian. \
 It explicates '*Tradition*', '*Practical*' or '*Mainstream*' as well. \
@@ -40,13 +41,14 @@ The lightning bolt shape implies RASM's speed and performance, while the pencil 
 
 ***
 
-It is a modular and minimalistic web based game engine written in Rust, the engine aims to be as fast as possible while maintaining its safety and portability within the web platform.
+### Overview
+RASM is a modular and minimalistic web based game engine written in Rust, the engine aims to be as fast as possible while maintaining its safety and portability within the web platform.
 
-***
-
-'RASM' is written in Rust and compiles to native .wasm (WebAssembly) files that run and execute inside a modern browser, it is based upon WebGPU and has a javascript modding interface available.
+it is written in Rust and compiles to a native .wasm (WebAssembly) binary that run and execute inside a modern browser, it is based upon WebGPU and has a javascript modding interface available.
 
 The project uses Github as its infrastructure and basis.  the [Wiki](https://github.com/VioletVillain/RASM/wiki), [Source Code](https://github.com/VioletVillain/RASM), [Forums/Issue tracker](https://github.com/VioletVillain/RASM/issues), [CI](https://github.com/VioletVillain/RASM/actions), [Releases](https://github.com/VioletVillain/RASM/releases), [Roadmap](https://github.com/VioletVillain/RASM/projects) And the [Website](https://VioletVillain.github.io/RASM/) Are All Hosted on Github.
+
+***
 
 ## Features
 [-Check here for project's progress-](https://github.com/VioletVillain/RASM/projects/1)
