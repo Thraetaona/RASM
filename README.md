@@ -5,7 +5,7 @@
 <img src="" alt="Logo">
 
   <p>
-    <strong>Data-Oriented 3D WebGPU Game Engine Written in Rust WebAssembly.</strong>
+    <strong>3D Ray-Tracing WebGPU Game Engine Written in Rust WebAssembly.</strong>
   </p>
 
   <p>
