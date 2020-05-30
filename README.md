@@ -31,7 +31,7 @@
 ***
 
 ## Introduction
-### Name & Logo
+### Nomenclature
 RASM ("رسم") is an acronym for '*Ray-tracing Assembler*' or '*Rasterizing Assembler*' depending on the context and also means '*Drawing*' in Persian. \
 It explicates '*Tradition*', '*Practical*' or '*Mainstream*' as well. \
 Interestingly, in addition to being a short and easy to remember name with relatable translations, it also starts with the first alphabet of the name of the programming language its written in; **R**ust.
